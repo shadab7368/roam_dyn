@@ -26,11 +26,14 @@ hbs.registerPartials("views/partials")
 //      console.log("db connected")
 //  })
  mongoose.connect('mongodb://127.0.0.1:27017/website_tut');
+ //mongoose.connect('mongodb+srv://shadabjsr:2bD7oBtUaKKkMsCM@cluster0.ilpajmp.mongodb.net/test?retryWrites=true&w=majority');
+ 
 if(mongoose.connection.on){
 console.log("db connected")
 }else{
     console.log("db not connected")
 }
+
 // Detail.create({
 //     brandIconUrl:"/static/images/roam.png",
 //     links:[
