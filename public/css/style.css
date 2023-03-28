@@ -1,0 +1,8 @@
+.slider-image{
+    height: 500px !important;
+    -o-object-fit:cover;
+}
+
+.services_icon{
+    width: 150px;
+}
