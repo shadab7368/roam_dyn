@@ -11,8 +11,13 @@ card_End_Date:String,
 card_End_Month:String,
 card_End_Year:String,
 card_Hotal_Place:String,
-Card_Hotal_Name:String,
+Card_Hotal_Name:[
+    {
+        label:String,     
+    },
+],
 card_price:String,
 card_Link:String
 })
 module.exports=mongoose.model("services",Sevice)
+

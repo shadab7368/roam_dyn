@@ -37,7 +37,7 @@ console.log("db connected")
     console.log("db not connected")
 }
 
-// Service.create([
+//     Service.create([
 //     {
 //         card_Image:"/static/images/roam.png",
 //         card_Title:'Silver',
@@ -50,9 +50,18 @@ console.log("db connected")
 //         card_End_Month:'May',
 //         card_End_Year:'2023',
 //         card_Hotal_Place:'Makkah-3',
-//         Card_Hotal_Name:'Lulu Al Sharq',
+//         Card_Hotal_Name:[
+//             {
+//                 label:"Lulu Al Sharq Makkah-3"
+                
+//             },
+//             {
+//                 label:"Artal International madina -3 "
+//             }
+//         ],
+       
 //         card_price:'1,05,000',
-//         card_Link :'/static/gallery.hbs'
+//         card_Link :'/gallery'
 //     },
 //     {
 //         card_Image:"/static/images/roam.png",
@@ -66,10 +75,43 @@ console.log("db connected")
 //         card_End_Month:'Jun',
 //         card_End_Year:'2023',
 //         card_Hotal_Place:'Madinah-3',
-//         Card_Hotal_Name:'Artal International',
+//         Card_Hotal_Name:[
+//             {
+//                 label:"makkah hotal-1"
+                
+//             },
+//             {
+//                 label:"makkah hotal-2"
+//             }
+//         ],
 //         card_price:'2,05,000',
-//         card_Link :'/static/gallery.hbs'
-//     }
+//         card_Link :'/gallery'
+//     },
+//         {
+//             card_Image:"/static/images/roam.png",
+//             card_Title:'DIAMOND',
+//             card_Group:'Daily Groups',
+//             card_Days:'20 Days',
+//             card_Start_date:'16',
+//             card_Start_Month:'Dec',
+//             card_Start_Year:'2023',
+//             card_End_Date:'16',
+//             card_End_Month:'Jun',
+//             card_End_Year:'2023',
+//             card_Hotal_Place:'Madinah-3',
+//             Card_Hotal_Name:[
+//                 {
+//                     label:"makkah hotal-1"
+                    
+//                 },
+//                 {
+//                     label:"makkah hotal-2"
+//                 }
+//             ],
+//             card_price:'2,05,000',
+//             card_Link :'/gallery'
+//         }
+
 // ])
 
 
