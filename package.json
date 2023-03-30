@@ -12,10 +12,21 @@
   "dependencies": {
     "body-parser": "^1.20.2",
     "express": "^4.18.2",
+    "express-validator": "^6.15.0",
     "hbs": "^4.2.0",
-    "mongoose": "^7.0.1"
+    "mongoose": "^7.0.1",
+    "mustache-express": "^1.3.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.21"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shadab7368/roam_dyn.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/shadab7368/roam_dyn/issues"
+  },
+  "homepage": "https://github.com/shadab7368/roam_dyn#readme"
 }

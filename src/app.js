@@ -1,27 +1,42 @@
 const express = require("express")
 const app= express();
-const hbs = require("hbs");
-const { MongoClient } = require('mongodb');
 const mongoose = require("mongoose");
-
-
+const hbs = require("hbs");
+const bodyParser= require('body-parser');
 const routes = require('./routes/main')
 const Detail = require("./models/Detail")
 const slider=require("./models/slider")
 
-// /static/css/StyleSheet.css ka matlab yeh ki public folder use ki jgha par static use krna hai 
 const Service = require("./models/Service")
+app.use(bodyParser.urlencoded({extended: true}))
 app.use('/static',express.static("public"))
 
-app.use('/',routes)
-
-
-
+app.use('',routes)
 // template engine set 
 // importent line 
 app.set('view engine','hbs')
 app.set("views","views")
 hbs.registerPartials("views/partials")
+
+const { MongoClient } = require('mongodb');
+
+
+
+
+
+
+
+
+// /static/css/StyleSheet.css ka matlab yeh ki public folder use ki jgha par static use krna hai 
+// app.use(bodyParser.json())
+
+
+
+
+
+
+
+
 
 //-----------------------------------*//
 //db connectionss

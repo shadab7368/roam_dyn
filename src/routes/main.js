@@ -1,4 +1,5 @@
 
+const { response, request } = require('express')
 const express=require('express')
 const {route} = require('express/lib/application')
 const Detail = require("../models/Detail") //--1 after create and insert data in mongo
@@ -28,4 +29,14 @@ routes.get('/gallery', async(req,res)=>{
     details:details
   })
 })
-module.exports=routes
+routes.post("/process-contact-form",(err,request,response)=>{
+console.log("this form is submit");
+console.log(request.body)
+
+})
+
+
+
+
+
+module.exports = routes;
