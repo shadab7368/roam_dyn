@@ -112,18 +112,17 @@
             <form action="/process-contact-form" method="post">
                     <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label">Your Email Address</label>
-                      <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                      <input name="email" type="email" class="form-control" id="exampleInputEmail1"  placeholder="name@example.com">
                     </div>
 
                     <div class=" mb-3">
-                      <label for="form-control" class="form-label">Your Contact Number</label>
-                      <input name="phone" type="number" class="form-control" id="contactNumberField">
+                      <label for="contactNumber" class="form-label">Your Contact Number</label>
+                      <input name="phone" type="number" class="form-control" id="contactNumber" placeholder="Phone No">
                     </div>
 
                     <div class="form-floating my-2">
                       <textarea name="query" style="height: 250px;" class="form-control" placeholder="Enter your quiry here" id="queryField"></textarea>
-                      <label for="queryField">Your Query</label>
+                      <label for="queryField" class="form-label">Your Query </label> 
                     </div>
 
                     <div class="container text-center">
@@ -135,6 +134,36 @@
       </div>
 
     </section>
+     {{!-- <section class="py-5">
+          <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                    <form action="/process-contact-form" method="post">
+                         <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                          <input name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                         <div class="mb-3">
+                          <label for="contactNumber" class="form-label">Contact No</label>
+                          <input name="phone" type="number" class="form-control" id="contactNumber" placeholder="Phone No">
+                        </div>
+                        <div class="form-floating my-2">
+                          
+                          <textarea name="query" class="form-control" id="queryField" rows="3"></textarea>
+                          <label for="queryField" class="form-label">Your Query </label> 
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                        
+                        
+
+                </div>
+              </div>
+          </div>
+
+         </section> --}}
+         
     <h2>waao.........</h2>
      <!-- Optional JavaScript; choose one of the two! -->
 

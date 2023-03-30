@@ -1,7 +1,9 @@
-const express = require("express")
+const express = require("express");
 const app= express();
-const mongoose = require("mongoose");
 const hbs = require("hbs");
+const { MongoClient } = require('mongodb');
+const mongoose = require("mongoose");
+
 const bodyParser= require('body-parser');
 const routes = require('./routes/main')
 const Detail = require("./models/Detail")
@@ -18,7 +20,7 @@ app.set('view engine','hbs')
 app.set("views","views")
 hbs.registerPartials("views/partials")
 
-const { MongoClient } = require('mongodb');
+
 
 
 
