@@ -1,7 +1,8 @@
 
 const { response, request } = require('express');
 const express=require('express')
-const {route} = require('express/lib/application')
+const {route} = require('express/lib/application');
+const Contact = require('../models/Contact');
 const Detail = require("../models/Detail") //--1 after create and insert data in mongo
 const Service = require('../models/Service')
 const slider = require('../models/slider')
@@ -30,11 +31,27 @@ routes.get('/gallery', async(req,res)=>{
   })
 });
 
-routes.post('/process-contact-form',(request,response)=>{
+routes.post('/process-contact-form', async (request,response)=>{
 console.log("this form is submit");
 console.log(request.body)
+//save the data to db
+try{
 
-});
+  const data = await Contact.create(request.body)
+
+    console.log(data)
+    response.redirect("/")
+
+  
+
+}catch(e)
+  {   
+    console.log(e)
+    response.redirect("/")
+  }
+
+
+})
 
 
 
